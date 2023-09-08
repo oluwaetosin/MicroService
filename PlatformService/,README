@@ -1,0 +1,5 @@
+code -r <folder name>
+
+dotnent --version
+
+dotnet new webapi -n <Project Name>
