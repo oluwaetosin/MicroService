@@ -1,0 +1,28 @@
+kubectl version
+kubectl apply -f platforms-depl.yaml
+
+kubectl get deployments
+kubectl get pods
+
+kubectl delete deployments platforms-depl.yaml
+
+kubectl get services   
+
+kubectl get pvc  
+
+kubectl get namespace  
+
+KUBECTL rollout restart deployment  
+
+ kubectl rollout restart deployment platforms-depl 
+
+ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/cloud/deploy.yaml
+
+kubectl create secret generic mssql --from-literal=SA_PASSWORD="password"
+
+ kubectl create secret generic mssql --from-literal=SA_PASSWORD="password!_20!"
+dotnet tool install --global dotnet-ef
+
+dotnet tool install --global dotnet-ef --version 6.*
+
+dotnet ef  migrations add initialmigration
