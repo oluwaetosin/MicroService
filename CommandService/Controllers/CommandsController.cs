@@ -60,7 +60,7 @@ namespace CommandService.Controllers
 
 
         [HttpPost]
-        public ActionResult<CommandReadDto> CreateCommandForPlatform(int platformId, CommandCreateDtos commanddto)
+        public ActionResult<CommandReadDto> CreateCommandForPlatform(int platformId, [FromBody] CommandCreateDto commanddto)
         {
             Console.WriteLine($"---> Hit CreateCommandForPlatform: {platformId}");
             
@@ -68,10 +68,19 @@ namespace CommandService.Controllers
             {
                 return NotFound();
             }
+            Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(commanddto));
 
             var command = _mapper.Map<Command>(commanddto);
 
+            Console.WriteLine("---------------inside CreateCommandForPlatform");
+
+            Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(command));
+
+             Console.WriteLine("---------------inside CreateCommandForPlatform end");
+
             _repo.CreateCommand(platformId, command);
+
+            _repo.SaveChanges();
 
             var commandReadDto = _mapper.Map<CommandReadDto>(command);
 

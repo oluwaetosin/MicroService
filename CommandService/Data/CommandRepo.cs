@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using CommandService.Models;
 
 namespace CommandService.Data
@@ -20,6 +21,8 @@ namespace CommandService.Data
 
             command.PlatformId = PlatformId;
 
+            Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(command));
+
             _context.Commands.Add(command);
         }
 
@@ -31,6 +34,11 @@ namespace CommandService.Data
             }
 
             _context.Platforms.Add(platform);
+        }
+
+        public bool ExternalPlatformExists(int externalPlatformId)
+        {
+             return _context.Platforms.Any(p => p.ExternalID == externalPlatformId);
         }
 
         public IEnumerable<Platform> GetAllPlatforms()
@@ -45,6 +53,13 @@ namespace CommandService.Data
 
         public IEnumerable<Command> GetCommandsForPlatform(int platformId)
         {
+            Console.WriteLine($"-----> GetCommandsForPlatform patformid: {platformId}");
+
+            Console.WriteLine($"-----> GetCommandsForPlatform Commandsform {platformId} ---------------");
+
+            Console.WriteLine(  System.Text.Json.JsonSerializer.Serialize(_context.Commands.ToList()));
+            Console.WriteLine("------------------------");
+
             return _context.Commands
             .Where(x=>x.PlatformId == platformId)
             .OrderBy(c=>c.Platform.Name);

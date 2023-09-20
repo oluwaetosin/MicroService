@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CommandService.Dtos
 {
-    public class CommandCreateDtos
+    public class CommandCreateDto
     {
  
         [Required]

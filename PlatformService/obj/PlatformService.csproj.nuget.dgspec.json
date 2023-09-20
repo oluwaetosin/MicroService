@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oluwa\\Documents\\CODE\\csharp_projects\\PlatformService\\PlatformService.csproj": {}
+    "c:\\Users\\oluwa\\Documents\\CODE\\csharp_projects\\PlatformService\\PlatformService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oluwa\\Documents\\CODE\\csharp_projects\\PlatformService\\PlatformService.csproj": {
+    "c:\\Users\\oluwa\\Documents\\CODE\\csharp_projects\\PlatformService\\PlatformService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oluwa\\Documents\\CODE\\csharp_projects\\PlatformService\\PlatformService.csproj",
+        "projectUniqueName": "c:\\Users\\oluwa\\Documents\\CODE\\csharp_projects\\PlatformService\\PlatformService.csproj",
         "projectName": "PlatformService",
-        "projectPath": "C:\\Users\\oluwa\\Documents\\CODE\\csharp_projects\\PlatformService\\PlatformService.csproj",
+        "projectPath": "c:\\Users\\oluwa\\Documents\\CODE\\csharp_projects\\PlatformService\\PlatformService.csproj",
         "packagesPath": "C:\\Users\\oluwa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oluwa\\Documents\\CODE\\csharp_projects\\PlatformService\\obj\\",
+        "outputPath": "c:\\Users\\oluwa\\Documents\\CODE\\csharp_projects\\PlatformService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,6 +65,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.10, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
