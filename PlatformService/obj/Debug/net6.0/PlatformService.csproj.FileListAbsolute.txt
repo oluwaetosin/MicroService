@@ -86,3 +86,10 @@ C:\Users\oluwa\Documents\CODE\csharp_projects\PlatformService\obj\Debug\net6.0\r
 C:\Users\oluwa\Documents\CODE\csharp_projects\PlatformService\bin\Debug\net6.0\appsettings.Production.json
 C:\Users\oluwa\Documents\CODE\csharp_projects\PlatformService\bin\Debug\net6.0\RabbitMQ.Client.dll
 C:\Users\oluwa\Documents\CODE\csharp_projects\PlatformService\bin\Debug\net6.0\System.Threading.Channels.dll
+C:\Users\oluwa\Documents\CODE\csharp_projects\PlatformService\bin\Debug\net6.0\Google.Protobuf.dll
+C:\Users\oluwa\Documents\CODE\csharp_projects\PlatformService\bin\Debug\net6.0\Grpc.AspNetCore.Server.dll
+C:\Users\oluwa\Documents\CODE\csharp_projects\PlatformService\bin\Debug\net6.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\oluwa\Documents\CODE\csharp_projects\PlatformService\bin\Debug\net6.0\Grpc.Core.Api.dll
+C:\Users\oluwa\Documents\CODE\csharp_projects\PlatformService\bin\Debug\net6.0\Grpc.Net.Client.dll
+C:\Users\oluwa\Documents\CODE\csharp_projects\PlatformService\bin\Debug\net6.0\Grpc.Net.ClientFactory.dll
+C:\Users\oluwa\Documents\CODE\csharp_projects\PlatformService\bin\Debug\net6.0\Grpc.Net.Common.dll
